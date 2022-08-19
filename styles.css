@@ -7,7 +7,23 @@
 .dice {
   text-align: center;
   display: inline-block;
+}
 
+#btn {
+  background: #cc0000;
+  background: linear-gradient(#cc0000, #610000);
+  border-radius: 1.1rem;
+  padding: 2.0rem 4.5rem;
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  font-size: 2rem;
+  border: 0;
+}
+
+#btn:active{
+  background: linear-gradient(#610000, #cc0000);
 }
 
 body {
@@ -15,10 +31,10 @@ body {
 }
 
 h1 {
-  margin: 30px;
+  margin: 3rem;
   font-family: 'Lobster', cursive;
-  text-shadow: 5px 0 #232931;
-  font-size: 8rem;
+  text-shadow: .5rem 0 #232931;
+  font-size: 5rem;
   color: #4ECCA3;
 }
 
@@ -37,5 +53,24 @@ footer {
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
+}
 
+@media screen and (max-width: 600px) {
+  img{
+    width: 40%;
+    align-self: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .dice{
+    display: flex;
+  }
+  #btn{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+  h1{
+    font-size: 2.5rem;
+    text-shadow: .05rem 0 #232931;
+  }
 }
